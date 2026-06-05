@@ -30,7 +30,7 @@ public class DashboardService {
 		Map<String, Object> stats = new HashMap<> ();
 		
 		stats.put("totalStudents", studentRepository.count());
-		stats.put("totalCourse", courseRepository.count());
+		stats.put("totalCourses", courseRepository.count());
 		stats.put("totalEnrollments", enrollmentRepository.count());
 		
 		Double totalRevenue = paymentRepository.findAll()
