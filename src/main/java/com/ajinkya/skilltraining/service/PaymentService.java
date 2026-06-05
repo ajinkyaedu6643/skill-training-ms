@@ -32,7 +32,7 @@ public class PaymentService {
 	}
 	
 	public List<Payment> getPaymentByStudent (Long studentId){
-		return paymentRepository.findByStudentId(studentId);
+		return paymentRepository.findByEnrollmentStudentId(studentId);
 	}
 	
 	public Double getTotalPaidByEnrollment(Long enrollmentId) {
